@@ -1,0 +1,200 @@
+/*==styling main-header==*/
+.main-header {
+	background-color: $header-background;
+  a {
+  	color: $link-color;
+  	font-size: $link-font-size;
+    &:hover {
+    	text-shadow: 0 0 .5px $link-hover;
+    }
+    @media (min-width: $break-s) {
+      display: block;
+  		padding: 5px;
+  		background-color: $link-background-color;
+  		margin-bottom: 5px;
+    }
+    @media (min-width: $break-m) {
+      background-color: $header-background;
+    }
+  }
+  p, .col {
+    padding-left: 1.5em;
+  	padding-right: 1.5em;
+  	color: $para-color;
+  	padding-bottom: 30px;
+  }
+  ul {
+    @media (min-width: $break-s) {
+      padding: 0;
+  		margin-left: 1.5em;
+  		margin-right: 1.5em;
+    }
+  }
+}
+.main-header {
+  & p {
+    @media (min-width: $break-m) {
+      width: 50%;
+      float: left;
+      text-align: justify;
+      margin: 0;
+      padding: 40px 40px 20px 40px;
+    }
+    @media (min-width: $break-l) {
+      padding-left: 0;
+    }
+  }
+}
+.main-nav {
+  @media (min-width: $break-m) {
+    display: table;
+		margin: 0 auto;
+  }
+  @media (min-width: $break-l) {
+    float: right;
+    margin-top: 20px;
+  }
+  & li {
+    @media (min-width: $break-m) {
+      float: left;
+  		margin-left: 25px;
+    }
+  }
+  & li a {
+    @media (min-width: $break-m) {
+      background-color: $header-background;
+    }
+  }
+}
+.profile-img {
+  @media (min-width: $break-s) {
+    width: 90%;
+    padding: 40px 40px 20px 40px;
+  }
+  @media (min-width: $break-m) {
+    width: 50%;
+		float: right;
+  }
+}
+.content {
+  @media (min-width: $break-m) {
+    width: 50%;
+  }
+  @media (min-width: $break-l) {
+    width: 33%;
+  }
+}
+.col {
+  @media (min-width: $break-m) {
+    float: left;
+    padding: 20px;
+  }
+}
+.footer-nav {
+  @media (min-width: $break-s) {
+    display: none;
+  }
+  @media (min-width: $break-m) {
+    display: initial;
+		float: right;
+  }
+  & ul li {
+    @media (min-width: $break-m) {
+      float: left;
+  		margin-left: 20px;
+    }
+  }
+}
+.navback {
+  @media (min-width: $break-m) {
+    display: none;
+  }
+}
+.name-footer {
+  @media (min-width: $break-s) {
+    float: left;
+  }
+}
+.navback {
+  @media (min-width: $break-s) {
+    float: right;
+  }
+}
+/*==styling container==*/
+.container {
+	width: 80%;
+	max-width: 1150px;
+	text-align: center;
+	line-height: 1.5;
+  @media (min-width: $break-s) {
+    width: 100%;
+		margin: 0 auto;
+  }
+  @media (min-width: $break-m) {
+    width: 90%;
+  }
+  @media (min-width: $break-l) {
+    width: 80%;
+  }
+  h1 {
+  	margin: 0;
+  	padding-top: 20px;
+    @media (min-width: $break-l) {
+      float: left;
+    }
+  }
+  h2 {
+  	color: $link-color;
+  	margin-top: 1.5em;
+  	margin-bottom: 1.5em;
+  }
+}
+* li {
+  list-style: none;
+}
+/*==all a link style to none==*/
+* a {
+	text-decoration: none;
+}
+.name {
+	font-family: 'Baloo', arial, sans-serif;
+	font-size: 1.5em;
+	color: $link-color;
+  &:hover {
+  	text-shadow: 0 0 2px $link-hover;
+  }
+}
+p {
+	color: $para-color;
+}
+
+img {
+	width: 100%;
+}
+/*==styling footer==*/
+footer {
+	background-color: $header-background;
+  padding-top: 10px;
+}
+.top-footer {
+  border-bottom: 1px dotted $para-color;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+  a {
+   @include link;
+  }
+}
+.bottom-footer {
+  @extend .top-footer;
+  a {
+  	color: $link-color;
+  }
+  & a:hover {
+  	text-shadow: 0 0 .1px $link-hover;
+  }
+}
+.clearfix:after {
+   content: ".";
+   display: block;
+   clear: both;
+}
