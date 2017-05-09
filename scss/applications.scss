@@ -1,6 +1,4 @@
 // Partial imports
-@import 'utilities/_variables',
-        'utilities/_extend',
-        'utilities/_mixins',
-        'base/_base',
-        'layout/_layout';
+@import 'utilities/_index',
+        'layout/_index',
+        'base/_index';

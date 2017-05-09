@@ -165,6 +165,10 @@
   }
 }
 p {
+	@media (min-width: $break-s) {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
 	color: $para-color;
 }
 
@@ -177,15 +181,16 @@ footer {
   padding-top: 10px;
 }
 .top-footer {
-  border-bottom: 1px dotted $para-color;
-	padding-left: 1.5em;
-	padding-right: 1.5em;
-  a {
-   @include link;
-  }
+	@media (min-width: $break-s) {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+	a {
+		@include link;
+	}
 }
 .bottom-footer {
-  @extend .top-footer;
+  @extend %top-footer;
   a {
   	color: $link-color;
   }
