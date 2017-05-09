@@ -1,10 +1,7 @@
-/*==General rules==*/
-* {
-  box-sizing: border-box; }
-
-body {
-  margin: 0;
-  padding: 0; }
+.bottom-footer {
+  border-bottom: 1px dotted grey;
+  padding-left: 1.5em;
+  padding-right: 1.5em; }
 
 /*==styling main-header==*/
 .main-header {
@@ -149,6 +146,10 @@ body {
 
 p {
   color: grey; }
+  @media (min-width: 320px) {
+    p {
+      padding-left: 1em;
+      padding-right: 1em; } }
 
 img {
   width: 100%; }
@@ -158,13 +159,14 @@ footer {
   background-color: #FAFAFA;
   padding-top: 10px; }
 
-.top-footer, .bottom-footer {
-  border-bottom: 1px dotted grey;
-  padding-left: 1.5em;
-  padding-right: 1.5em; }
-  .top-footer a, .bottom-footer a {
-    color: grey;
-    font-weight: bold; }
+@media (min-width: 320px) {
+  .top-footer {
+    padding-left: 1em;
+    padding-right: 1em; } }
+.top-footer a {
+  font-size: 17px;
+  font-weight: bold;
+  color: grey; }
 
 .bottom-footer a {
   color: #ffd700; }
@@ -175,5 +177,13 @@ footer {
   content: ".";
   display: block;
   clear: both; }
+
+/*==General rules==*/
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0; }
 
 /*# sourceMappingURL=applications.css.map */
