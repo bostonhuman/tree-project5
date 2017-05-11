@@ -148,6 +148,10 @@
   	margin-top: 1.5em;
   	margin-bottom: 1.5em;
   }
+	.title {
+		@include pro-title;
+		@extend %top-footer;
+	}
 }
 * li {
   list-style: none;
@@ -169,7 +173,7 @@ p {
 		padding-left: 1em;
 		padding-right: 1em;
 	}
-	color: $para-color;
+	@include link;
 }
 
 img {
@@ -179,6 +183,7 @@ img {
 footer {
 	background-color: $header-background;
   padding-top: 10px;
+	@extend %top-footer;
 }
 .top-footer {
 	@media (min-width: $break-s) {

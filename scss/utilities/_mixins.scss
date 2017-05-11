@@ -2,6 +2,12 @@
 
 @mixin link {
   font-size: 17px;
+  font-weight: 200;
+  color: $para-color;
+}
+@mixin pro-title {
+  font-family: cursive, sans-serif;
+  font-size: 23px;
   font-weight: bold;
-  color: grey;
+  color: $para-color;
 }
