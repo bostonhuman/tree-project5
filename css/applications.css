@@ -1,4 +1,4 @@
-.bottom-footer {
+.container .title, footer, .bottom-footer {
   border-bottom: 1px dotted grey;
   padding-left: 1.5em;
   padding-right: 1.5em; }
@@ -129,6 +129,11 @@
     color: #ffd700;
     margin-top: 1.5em;
     margin-bottom: 1.5em; }
+  .container .title {
+    font-family: cursive, sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+    color: grey; }
 
 * li {
   list-style: none; }
@@ -145,6 +150,8 @@
     text-shadow: 0 0 2px #FA9200; }
 
 p {
+  font-size: 17px;
+  font-weight: 200;
   color: grey; }
   @media (min-width: 320px) {
     p {
@@ -165,7 +172,7 @@ footer {
     padding-right: 1em; } }
 .top-footer a {
   font-size: 17px;
-  font-weight: bold;
+  font-weight: 200;
   color: grey; }
 
 .bottom-footer a {
